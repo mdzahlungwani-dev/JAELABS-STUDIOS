@@ -1,0 +1,18 @@
+/* Call and consultation booking actions */
+.nav-book{white-space:nowrap}
+.contact-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.contact-cta-row .btn{font-size:11px}
+.contact-details a{text-decoration:underline;text-decoration-color:#b9a6ff80;text-underline-offset:3px}
+.quick-contact{position:fixed;right:20px;bottom:20px;z-index:120;display:flex;gap:8px;padding:7px;border:1px solid #ffffff20;border-radius:999px;background:#17171eeF;box-shadow:0 10px 35px #0007;backdrop-filter:blur(16px)}
+.quick-contact a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;font-size:12px;font-weight:700;transition:transform .2s,background .2s}
+.quick-contact a:hover{transform:translateY(-2px)}
+.quick-contact-call{border:1px solid #ffffff2b;color:#f4f1f8}
+.quick-contact-whatsapp{background:#d5ff73;color:#171b12}
+@media(max-width:700px){
+ .nav-book{display:none}
+ .quick-contact{right:12px;bottom:12px;left:12px;justify-content:stretch}
+ .quick-contact a{flex:1}
+ .contact-cta-row .btn{width:100%}
+ body{padding-bottom:66px}
+}
+@media(prefers-reduced-motion:reduce){.quick-contact a{transition:none}}
